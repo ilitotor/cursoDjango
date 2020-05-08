@@ -14,6 +14,11 @@ django = "*"
 gunicorn = "*"
 pytest-django = "*"
 python-decouple = "*"
+config = "*"
+flake8 = "*"
 
 [requires]
 python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
