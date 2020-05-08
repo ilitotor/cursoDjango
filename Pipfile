@@ -13,6 +13,11 @@ codecov = "*"
 django = "*"
 gunicorn = "*"
 pytest-django = "*"
+python-decouple = "*"
+config = "*"
 
 [requires]
 python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
