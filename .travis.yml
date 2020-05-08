@@ -17,4 +17,7 @@ instal:
 script:
   - pipenv run black .
   - pipenv run flake8 .
-  - pipenv run pytest
+  - pipenv run pytest --cov=cursoDjango
+
+after_success:
+  - pipenv run codecov
