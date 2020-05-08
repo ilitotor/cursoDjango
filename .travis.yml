@@ -15,4 +15,6 @@ instal:
   - pipenv sync -d
 
 script:
+  - pipenv run black .
   - pipenv run flake8 .
+  - pipenv run pytest

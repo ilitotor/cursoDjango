@@ -18,7 +18,4 @@ from django.urls import path
 
 from cursoDjango.base.views import home
 
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', home)
-]
+urlpatterns = [path("admin/", admin.site.urls), path("", home)]
