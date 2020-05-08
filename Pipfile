@@ -19,6 +19,7 @@ dj-database-url = "*"
 psycopg2-binary = "*"
 importlib-metadata = "*"
 django-s3-folder-storage = "*"
+collectfast = "*"
 
 [requires]
 python_version = "3.7"
