@@ -25,7 +25,7 @@ before_script:
 
 script:
   - pipenv run black .
-  - pipenv run flake8 .
+  - pipenv run --ignore=E501 flake8 .
   - pipenv run pytest --cov=cursoDjango
 
 after_success:
