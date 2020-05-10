@@ -25,8 +25,11 @@ before_script:
 
 script:
   - pipenv run black .
-  - pipenv run flake8 --ignore=E501 .
+  - pipenv run flake8 --ignore=E501,E231,E231,W503 .
   - pipenv run pytest --cov=cursoDjango
 
 after_success:
   - pipenv run codecov
+
+
+    https://s3.sa-east-1.amazonaws.com/hardcore.codes/static/admin/css/autocomplete.css?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEND%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXNhLWVhc3QtMSJGMEQCICZ6K9noFN1ESfx6sK7FioP%2Bg4sgiN0po%2Fxj6C9d6mN%2BAiAJ%2FjRGZJAiSN2PtFjAIlyZCFYTMqwP%2BqS7lhzMJ9%2F1LiqwAQgZEAAaDDAwNjAyMTIyMzU0NSIMevmcSdUP%2Fcx%2FEddbKo0BtJ4QKcVC5%2FJKpbM%2Bw5IMi2EMDw0mCYRxbPl%2Fb6JrVMqGaBROk1%2B5jK7cOU%2BPjPEhAgfqQJxQcBcVqfy25VfS2FosMFYy7ZErxtV6AAcq%2FXFUidR3qeeBnW9OTynZqn%2BY5nLSxBKRdCHpOIV9b3UUP0qrHfybaDqHyPfqVqZ63SDVc%2F%2Fsk%2BxRIxSr66p0ML7N4PUFOqICrVqvLiwkMa0PcC9NlxKOl0AP3IOo3N1AEEoyFpET4heuqPwEk1zEDAX4kifEJEyx9SzT2YOcpSdzIEsgJ6Gza3t5FXs5PCW5%2Br959%2F%2Bt5kNmW6Z6SObEhF3Jf7wf6UhDQIBv8NfV9BnyXOknEsGNT6KpUGVF8MVw85XjBcRwHDsNPamoPA%2BvyQO1jdBPHnhI%2BzqHbBcSHoJ53rW5yKtb07JEpLRup6O5OQR6iZRw97YMeWf287qwPGh%2BmNvxXYV87rPm4cjyT78JTxVVcE93ZDLT2yVs82ZMyiklzIfI0wabdoiIhzlqdEbzvnU19iAg3QEsRqSE0l6fM0YPjlQ99sEjXmCaDK5OVd%2BLbwUGBK9dEXRIjSYhBzaRrSnw39I9zN0%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200510T160748Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQCZXESR45YC3CU7E%2F20200510%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Signature=f0235c0040f797f25dda5cf6b69d7244d3293d19292150eebd5f7a0320ae5674
